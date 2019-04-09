@@ -56,7 +56,8 @@ const viewAll=((req,res)=>{
         .then((users) => {
           res.status(200).json({
               errors:[],
-              data:users
+            //   data:users,
+              users:users
           });
         }).catch((err) => {
             res.status(500).json({
